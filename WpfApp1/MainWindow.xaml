@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+TextElement.FontWeight="Regular"
+TextElement.FontSize="13"
+TextOptions.TextFormattingMode="Ideal"
+TextOptions.TextRenderingMode="Auto"
+Background="#FFFFFCFC"
+FontFamily="{DynamicResource MaterialDesignFont}"
+xmlns:local="clr-namespace:WpfApp"
+mc:Ignorable="d"
+Title="MainWindow" Height="574.342" Width="952.763">
+    <Grid Margin="0,0,37,47" >
+        <materialDesign:Card Padding="32" Margin="32,117,0,0" Height="358" Background="#00FF00">
+            <materialDesign:Card.Effect>
+                <DropShadowEffect Color="#FF4500" BlurRadius="10" ShadowDepth="20"/>
+            </materialDesign:Card.Effect>
+            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" HorizontalAlignment="Center" Margin="20" FontWeight="SemiBold" FontStyle="Italic">
+                <TextBlock Foreground="#FFFFFF" FontSize="24">Имя: Галым</TextBlock><LineBreak/>
+                <TextBlock  Foreground="#FFFFFF" FontSize="24">Фамилия: Шахпутов</TextBlock><LineBreak/>
+                <TextBlock Foreground="#FFFFFF" FontSize="24">Дата рождения: 14.03.2001</TextBlock><LineBreak/>
+                <TextBlock Foreground="#FFFFFF" FontSize="24">Возраст: 18</TextBlock><LineBreak/>
+                <TextBlock Foreground="#FFFFFF" FontSize="24">Адрес: Абая 63</TextBlock><LineBreak/>
+                <TextBlock Foreground="#FFFFFF" FontSize="24">Пол: Мужской </TextBlock>
+            </TextBlock>
+        </materialDesign:Card>
+      
+    </Grid>
+</Window>
+
